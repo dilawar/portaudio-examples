@@ -14,3 +14,5 @@ target_link_libraries(basic_io_connection ${PORTAUDIO_LIBRARIES})
 add_executable(devices_info devices_info.c)
 target_link_libraries(devices_info ${PORTAUDIO_LIBRARIES})
 
+enable_testing()
+add_test(NAME test_device_info COMMAND $<TARGET_NAME:devices_info>)
