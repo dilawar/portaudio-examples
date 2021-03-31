@@ -13,4 +13,6 @@ Two binaries are generated: `basic_io_connection` and `devices_info`.
 
 # Changelog 
 
-- 2021-03-31: Added cmake based build system and removed Makefile based flow.
+- 2021-03-31:
+  * Added cmake based build system and removed Makefile based flow.
+  * changes for portaudio v19.
