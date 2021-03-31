@@ -1,3 +1,5 @@
+[![CMake](https://github.com/dilawar/portaudio-examples/actions/workflows/cmake.yml/badge.svg)](https://github.com/dilawar/portaudio-examples/actions/workflows/cmake.yml)
+
 # portaudio-examples
 
 Some simple examples using Portaudio library. 
