@@ -89,7 +89,7 @@ int main (int argc, char *argv[])
 	PaStreamParameters in_params, out_params; // structures for I/Os configuration
 	int num_channels = 2; // 2 channels (stereo)
 	int samplerate = 44100; // sample rate
-	int device_id = 3; // sound card device ID (is dependent of your system
+	int device_id = 0; // sound card device ID (is dependent of your system
 	int frames_per_buffer = 256; // audio buffer for portaudio
 	char sample_format = paFloat32; // type of sample format
 
@@ -105,7 +105,7 @@ int main (int argc, char *argv[])
 		Pa_GetDeviceInfo(in_params.device)->defaultLowInputLatency;
 	in_params.hostApiSpecificStreamInfo = NULL;
 	// OUTPUTS
-	out_params.device = device_id;
+	out_params.device = device_id + 1;
 	out_params.channelCount = num_channels;
 	out_params.sampleFormat = sample_format;
 	out_params.suggestedLatency =
