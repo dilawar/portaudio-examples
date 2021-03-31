@@ -13,7 +13,7 @@ OBJ_DIR = obj
 ARCH = $(shell uname -m)
 
 CC ?= gcc
-CFLAGS += -std=c11 -Wall -Werror -pedantic-errors
+CFLAGS += -std=c11 -Wall -Werror -pedantic-errors $(pkg-config --cflags portaudio-2.0)
 
 ifndef DEBUG
 	ADDITIONAL_CXXFLAGS ?= -O2
